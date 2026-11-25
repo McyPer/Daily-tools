@@ -49,7 +49,7 @@ interface ToolMetadata {
   seoFaq: { q: string; a: string }[];
 }
 
-const CONTACT_EMAIL = 'your-email@example.com';
+const CONTACT_EMAIL = 'mohamhasan40@gmail.com';
 
 const TOOLS_CATALOG: ToolMetadata[] = [
   {
