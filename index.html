@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KINETIC // Daily Tools Workbench — PDF to Image, Compress Image, Unit, Percentage & Loan Calculators</title>
+    <meta
+      name="description"
+      content="Fast, 100% client-side daily utility workbench. Convert PDF to high-DPI images, compress & resize photos, convert units, calculate percentages, and run loan amortization schedules in your browser."
+    />
+    <meta
+      name="keywords"
+      content="daily tools, pdf to images, compress images, unit converter, percentage calculator, loan calculator, mortgage amortization, client-side tools"
+    />
+    <meta name="author" content="KINETIC Instruments" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#F7F6F2" />
+
+    <!-- Open Graph / Social SEO -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="KINETIC // Daily Tools Workbench" />
+    <meta
+      property="og:description"
+      content="Tactile Swiss Precision daily utilities: PDF to Image Converter, Image Compressor, Unit Converter, Percentage Calculator, and Loan Amortization Engine."
+    />
+
+    <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PDF.js for 100% Client-Side PDF Page Rendering to Canvas -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      if (window.pdfjsLib) {
+        window.pdfjsLib.GlobalWorkerOptions.workerSrc =
+          'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+      }
+    </script>
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "KINETIC Daily Tools Workbench",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "Convert PDF to PNG, JPG, and WebP Images",
+          "Client-side Image Compression with Before/After Comparison",
+          "Bi-directional Unit Converter across 7 categories",
+          "3-Way Live Percentage & Discount Calculator",
+          "Loan & Mortgage Amortization Calculator with Schedule Export"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
